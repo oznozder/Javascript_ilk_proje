@@ -1,0 +1,25 @@
+# Node.js modülleri
+node_modules/
+
+# Derlenmiş dosyalar
+dist/
+build/
+
+# Geçici dosyalar
+*.tmp
+*.log
+*.cache
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# VS Code ayar dosyaları
+.vscode/
+
+# Paket yöneticisi kilit dosyaları
+package-lock.json
+yarn.lock
+
+# Çalışma anındaki dosyalar
+*.env

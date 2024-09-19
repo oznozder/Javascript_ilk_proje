@@ -1,0 +1,29 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "For Js Education",
+  "main": "Javascript.js",
+  "scripts": {
+    "tailwind":"npx tailwindcss -i ./input.css -o ./output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oznozder/Javascript_ilk_proje.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Html5",
+    "Css3",
+    "Tailwind"
+  ],
+  "author": "Ozan Özder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oznozder/Javascript_ilk_proje/issues"
+  },
+  "homepage": "https://github.com/oznozder/Javascript_ilk_proje#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.12"
+  }
+}
