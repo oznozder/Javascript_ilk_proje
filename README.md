@@ -16,14 +16,14 @@
 ## Tailwind
 ```sh
 https://tailwindcss.com/docs/installation
-nodejs -v
-npm -v
+nodejs v20.17.0 (-v)
+npm  v10.8.2
 npm init -y (Package.json)
-npm install -D tailwindcss (Tailwind Development)
+npm install -D tailwindcss (Tailwind for Development)
 npx tailwindcss init (Tailwind.config.js)
 Package Json:
 "scripts": {
-    "Tailwind":"npx tailwindcss -i ./input.css -o ./output.css --watch" }
+    "tailwind":"npx tailwindcss -i ./input.css -o ./output.css --watch" }
 
     npm run tailwind
 ```
