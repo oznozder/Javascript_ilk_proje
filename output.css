@@ -614,6 +614,10 @@ video {
   font-family: Spicy Rice, serif;
 }
 
+.font-tutorialFont {
+  font-family: Roboto, sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
