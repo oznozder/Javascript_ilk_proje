@@ -26,47 +26,104 @@ console.log("3. işlem devam ediyor");
 
 // Start Code
 
-//Hoisting
-kelime666="Kelime toptancisi";
-var kelime666;
-console.log(kelime666);
-console.log(typeof kelime666);
+//OPERATORS
 
-// VAR GLOBAL STATE START
-var kelime="Js Tutorial";
-console.log(kelime);
-console.log(typeof kelime);
+//MATH
+let user3=Number(prompt("Lütfen işlem yapmak istediğiniz ilk numarayi giriniz:"))
+// Math constants
+console.log("PI: " + Math.PI); // pi sayısını getirir.
+console.log("E: " + Math.E); // Euler sayısını getirir
 
-var sayi=619;
-console.log(sayi);
-console.log(typeof sayi);
+// Math functions
+console.log("Mutlak: " + Math.abs(user3)); // Mutlak değerini alır
+console.log("Karekök: " + Math.sqrt(user3)); // Karekökünü alır
 
-var sayi=41965.651;
-console.log(sayi);
-console.log(typeof sayi);
+// Exponential functions
+console.log("Üslü: " + Math.pow(user3, 2)); // Üs alma işlemi
+console.log("Üslü: " + (user3 ** 2)); // Üs alma işlemi (alternatif)
 
-var boolen=false;
-console.log(boolen);
-console.log(typeof boolen);
+// Rounding functions
+console.log("Yuvarla: " + Math.round(7.3)); // En yakın tam sayıya yuvarlar
+console.log("Yuvarla: " + Math.round(7.5)); // En yakın tam sayıya yuvarlar
 
-var obje=["Ali"+27];
-console.log(obje);
-console.log(typeof obje);
-// VAR GLOBAL STATE END
+console.log("Aşaği Yuvarla: " + Math.floor(8.9)); // Aşağı yuvarlar
+console.log("Yukari Yuvarla: " + Math.ceil(8.1)); // Yukarı yuvarlar
 
-//LET
-let kelime2="Cansu";
-console.log(kelime2);
+// Random number generation
+console.log("Rastgele sayi: " + Math.random() * 10); // 0 ile 10 arasında rastgele bir sayı üretir
+console.log("Rastgele sayi: " + Math.floor(Math.random()*10+1)); // 0 ile 10 arasında rastgele bir "Tam" sayı üretir.
 
-let kelime3="Ozan";
-console.log(kelime3);
+// Trigonometric functions
+console.log("Sin: " + Math.sin(user3 * Math.PI / 180)); // Dereceyi radyana çevirip sinüsünü alır
 
-//CONST
-const kelime4="Cem";
-console.log(kelime2);
 
-const kelime5="Kemal";
-console.log(kelime5);
+
+
+
+
+// let number1=11;
+// let number2=2;
+// let number3=2,number4=12;
+// console.log(number1 + number2); // number1 ve number2'nin toplamını yazdırır
+// console.log(number1 - number2); // number1 ve number2'nin farkını yazdırır
+// console.log(number1 / number2); // number1'in number2'ye bölümünü yazdırır
+// console.log(number1 * number2); // number1 ve number2'nin çarpımını yazdırır
+// console.log(number1 % number2); // number1'in number2'ye bölümünden kalanını yazdırır (Modulus)
+// console.log(number1 ** number2); // number1'in number2 kuvvetini yazdırır (Exponentiation)
+
+//GETTING DATA FROM USER
+// let user1=Number(prompt("Lütfen işlem yapmak istediğiniz ilk numarayi giriniz:")) 
+// let user2=parseInt(prompt("Lütfen işlem yapmak istediğiniz ikinci numarayi giriniz:")) 
+
+// console.log(user1 + user2); // number1 ve number2'nin toplamını yazdırır
+// console.log(user1 - user2); // number1 ve number2'nin farkını yazdırır
+// console.log(user1 / user2); // number1'in number2'ye bölümünü yazdırır
+// console.log(user1 * user2); // number1 ve number2'nin çarpımını yazdırır
+// console.log(user1 % user2); // number1'in number2'ye bölümünden kalanını yazdırır (Modulus)
+// console.log(user1 ** user2); // number1'in number2 kuvvetini yazdırır (Exponentiation)
+
+
+ //Hoisting
+// kelime666="Kelime toptancisi";
+// var kelime666;
+// console.log(kelime666);
+// console.log(typeof kelime666);
+
+ // VAR GLOBAL STATE START
+// var kelime="Js Tutorial";
+// console.log(kelime);
+// console.log(typeof kelime);
+
+// var sayi=619;
+// console.log(sayi);
+// console.log(typeof sayi);
+
+// var sayi=41965.651;
+// console.log(sayi);
+// console.log(typeof sayi);
+
+// var boolen=false;
+// console.log(boolen);
+// console.log(typeof boolen);
+
+// var obje=["Ali"+27];
+// console.log(obje);
+// console.log(typeof obje);
+ // VAR GLOBAL STATE END
+
+ //LET
+// let kelime2="Cansu";
+// console.log(kelime2);
+
+// let kelime3="Ozan";
+// console.log(kelime3);
+
+ //CONST
+// const kelime4="Cem";
+// console.log(kelime2);
+
+// const kelime5="Kemal";
+// console.log(kelime5);
 
 
 
