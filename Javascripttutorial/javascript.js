@@ -26,35 +26,99 @@ console.log("3. işlem devam ediyor");
 
 // Start Code
 
+//TYPE OF
+
+let varible1=44;
+console.log(typeof varible1);
+
+varible1=String(44);
+console.log(typeof varible1);
+
+varible1=true;
+console.log(typeof varible1);
+
+varible1=()=>{};
+console.log(typeof varible1);
+
+// UNDEFINED
+
+let data;
+console.log(typeof data);
+
+// NAN
+
+let data1=44/22;
+console.log(data1);
+
+data1=44/"22";
+console.log(data1);
+
+data1=44/Number("22");
+console.log(data1);
+
+data1=44/"abs";
+console.log(data1);
+
+if(isNaN(data1)){
+    console.log("Lütfen sayi giriniz");
+}
+
+//INFINITY
+console.log(44/0);
+console.log(0/44);
+
+//ESCAPE CHARACTERS
+
+let escape1="1. alan '2. alan";
+console.log(escape1);
+
+escape1="1. alan \"2. alan";
+console.log(escape1);
+
+escape1='1. alan \'2. alan';
+console.log(escape1);
+
+escape1='1. alan \"2. alan';
+console.log(escape1);
+
+escape1="1. alan \n\t2. alan\u00A9";
+console.log(escape1);
+
+//NULL
+let escape2=null;
+console.log(escape2);
+
+
+
 //OPERATORS
 
-//MATH
-let user3=Number(prompt("Lütfen işlem yapmak istediğiniz ilk numarayi giriniz:"))
-// Math constants
-console.log("PI: " + Math.PI); // pi sayısını getirir.
-console.log("E: " + Math.E); // Euler sayısını getirir
+ //MATH
+// let user3=Number(prompt("Lütfen işlem yapmak istediğiniz ilk numarayi giriniz:"))
+ // Math constants
+// console.log("PI: " + Math.PI); // pi sayısını getirir.
+// console.log("E: " + Math.E); // Euler sayısını getirir
 
-// Math functions
-console.log("Mutlak: " + Math.abs(user3)); // Mutlak değerini alır
-console.log("Karekök: " + Math.sqrt(user3)); // Karekökünü alır
+ // Math functions
+// console.log("Mutlak: " + Math.abs(user3)); // Mutlak değerini alır
+// console.log("Karekök: " + Math.sqrt(user3)); // Karekökünü alır
 
-// Exponential functions
-console.log("Üslü: " + Math.pow(user3, 2)); // Üs alma işlemi
-console.log("Üslü: " + (user3 ** 2)); // Üs alma işlemi (alternatif)
+ // Exponential functions
+// console.log("Üslü: " + Math.pow(user3, 2)); // Üs alma işlemi
+// console.log("Üslü: " + (user3 ** 2)); // Üs alma işlemi (alternatif)
 
 // Rounding functions
-console.log("Yuvarla: " + Math.round(7.3)); // En yakın tam sayıya yuvarlar
-console.log("Yuvarla: " + Math.round(7.5)); // En yakın tam sayıya yuvarlar
+// console.log("Yuvarla: " + Math.round(7.3)); // En yakın tam sayıya yuvarlar
+// console.log("Yuvarla: " + Math.round(7.5)); // En yakın tam sayıya yuvarlar
 
-console.log("Aşaği Yuvarla: " + Math.floor(8.9)); // Aşağı yuvarlar
-console.log("Yukari Yuvarla: " + Math.ceil(8.1)); // Yukarı yuvarlar
+// console.log("Aşaği Yuvarla: " + Math.floor(8.9)); // Aşağı yuvarlar
+// console.log("Yukari Yuvarla: " + Math.ceil(8.1)); // Yukarı yuvarlar
 
-// Random number generation
-console.log("Rastgele sayi: " + Math.random() * 10); // 0 ile 10 arasında rastgele bir sayı üretir
-console.log("Rastgele sayi: " + Math.floor(Math.random()*10+1)); // 0 ile 10 arasında rastgele bir "Tam" sayı üretir.
+ // Random number generation
+// console.log("Rastgele sayi: " + Math.random() * 10); // 0 ile 10 arasında rastgele bir sayı üretir
+// console.log("Rastgele sayi: " + Math.floor(Math.random()*10+1)); // 0 ile 10 arasında rastgele bir "Tam" sayı üretir.
 
 // Trigonometric functions
-console.log("Sin: " + Math.sin(user3 * Math.PI / 180)); // Dereceyi radyana çevirip sinüsünü alır
+// console.log("Sin: " + Math.sin(user3 * Math.PI / 180)); // Dereceyi radyana çevirip sinüsünü alır
 
 
 
