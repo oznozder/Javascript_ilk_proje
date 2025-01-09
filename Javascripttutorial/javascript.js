@@ -37,6 +37,8 @@ console.log(typeof varible1);
 varible1=true;
 console.log(typeof varible1);
 
+varible1=String(true);
+
 varible1=()=>{};
 console.log(typeof varible1);
 
