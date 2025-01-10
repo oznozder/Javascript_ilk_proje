@@ -26,69 +26,129 @@ console.log("3. işlem devam ediyor");
 
 // Start Code
 
-//TYPE OF
 
-let varible1=44;
-console.log(typeof varible1);
+// NUMERIC OPERATIONS
+let number1=55.44;
+// document.writeln(number1);
+console.log(number1);
+console.log(typeof number1);
+console.log(Number(number1));
+console.log(parseInt(number1));
+console.log(parseFloat(number1));
 
-varible1=String(44);
-console.log(typeof varible1);
+let normal=1300000;
+console.log(normal);
 
-varible1=true;
-console.log(typeof varible1);
+let bilimsel=13E+5;
+console.log(bilimsel);
 
-varible1=String(true);
+let bilimsel1=13E-5;
+console.log(bilimsel1);
 
-varible1=()=>{};
-console.log(typeof varible1);
+//EXPONENTIAL
+const number2=1453.1234;
+console.log(number2.toExponential(1));
+
+//BINARIES
+let binary=0b01010101111;
+console.log(binary);
+
+//OCTALS
+let octal=0o1234567;
+console.log(octal);
+
+//HEXADEMICAL
+let hexa=0x123456789ABCDEF;
+console.log(hexa);
+
+//DECIMAL TO BINARY
+// BINARIY (2)
+let number3=4444;
+let binary3=number3.toString(2);
+console.log(binary3);
+
+//DECIMAL TO OCTAL
+// OCTAL (8)
+let octal3=number3.toString(8);
+console.log(octal3);
+
+//DECIMAL TO HEXADECIMAL
+// HEXADECIMAL (16)
+let hexadecimal3=number3.toString(16);
+console.log(hexadecimal3);
+
+//DECIMAL TO FIXED
+const number5=12345.6789;
+console.log(number5.toFixed(3));
+console.log(number5.toPrecision(3));
+
+
+//STRING OPERATIONS
+
+
+// TYPE OF
+
+// let varible1=44;
+// console.log(typeof varible1);
+
+// varible1=String(44);
+// console.log(typeof varible1);
+
+// varible1=true;
+// console.log(typeof varible1);
+
+// varible1=String(true);
+
+// varible1=()=>{};
+// console.log(typeof varible1);
 
 // UNDEFINED
 
-let data;
-console.log(typeof data);
+// let data;
+// console.log(typeof data);
 
-// NAN
+//  NAN
 
-let data1=44/22;
-console.log(data1);
+// let data1=44/22;
+// console.log(data1);
 
-data1=44/"22";
-console.log(data1);
+// data1=44/"22";
+// console.log(data1);
 
-data1=44/Number("22");
-console.log(data1);
+// data1=44/Number("22");
+// console.log(data1);
 
-data1=44/"abs";
-console.log(data1);
+// data1=44/"abs";
+// console.log(data1);
 
-if(isNaN(data1)){
-    console.log("Lütfen sayi giriniz");
-}
+// if(isNaN(data1)){
+//     console.log("Lütfen sayi giriniz");
+// }
 
-//INFINITY
-console.log(44/0);
-console.log(0/44);
+//  INFINITY
+// console.log(44/0);
+// console.log(0/44);
 
-//ESCAPE CHARACTERS
+//  ESCAPE CHARACTERS
 
-let escape1="1. alan '2. alan";
-console.log(escape1);
+// let escape1="1. alan '2. alan";
+// console.log(escape1);
 
-escape1="1. alan \"2. alan";
-console.log(escape1);
+// escape1="1. alan \"2. alan";
+// console.log(escape1);
 
-escape1='1. alan \'2. alan';
-console.log(escape1);
+// escape1='1. alan \'2. alan';
+// console.log(escape1);
 
-escape1='1. alan \"2. alan';
-console.log(escape1);
+// escape1='1. alan \"2. alan';
+// console.log(escape1);
 
-escape1="1. alan \n\t2. alan\u00A9";
-console.log(escape1);
+// escape1="1. alan \n\t2. alan\u00A9";
+// console.log(escape1);
 
-//NULL
-let escape2=null;
-console.log(escape2);
+//  NULL
+// let escape2=null;
+// console.log(escape2);
 
 
 
