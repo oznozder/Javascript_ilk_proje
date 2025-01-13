@@ -26,6 +26,68 @@ console.log("3. işlem devam ediyor");
 
 // Start Code
 
+// FUNCTIONS
+//  function type 1 : parametresiz returnsuz
+// function parametresizreturnsuz(){
+//     console.log("Parametresiz ve returnsuz fonksiyon");
+// }
+// parametresizreturnsuz();
+
+//  function type 2 : parametreli returnsuz
+
+// function parametrelireturnsuz(adi,soyadi,memleketi){
+//     console.log("Parametreli ve returnsuz fonksiyon: "+adi+" "+soyadi+" "+memleketi);
+// }
+// parametrelireturnsuz("Cansu","Ozan","Ist");
+
+//  function type 3 : parametresiz returnlu
+
+// function parametresizreturnlu(){
+//     return "Parametresiz ve returnlu fonksiyon";
+// }
+// console.log(parametresizreturnlu());
+
+// const data1=parametresizreturnlu();
+// console.log(data1);
+
+//  function type 4 : parametreli returnlu
+
+// function parametrelireturnlu(adi,soyadi,memleketi){
+//     return `Parametreli Returnlu fonksiyon: ${adi} ${soyadi} ${memleketi}`;
+// }
+
+// console.log(parametrelireturnlu("Cem","Özder","Eskişehir"));
+
+// const data4=parametrelireturnlu("Kemal","Melek","Urfa");
+// console.log(data4);
+
+// NORMAL
+// function normalfunction(){
+//     console.log("Normal Fonksiyon");
+// }
+// normalfunction();
+
+// Anonymus Function
+// const anonymusfunction = function(){
+//     console.log("Anonymus Fonksiyon");
+// }
+// anonymusfunction();
+
+// Arrow Function
+// const arrowfunction=()=>{
+//     console.log("Arrow Fonksiyon");
+// }
+// arrowfunction();
+
+// Immedia Function
+(function(){
+    console.log("Immedia Anonymous Fonksiyon");
+})();
+
+(()=>{
+    console.log("Immedia Anonymous Fonksiyon");
+})();
+
 
 // NUMERIC OPERATIONS
 // let number1=55.44;
@@ -85,39 +147,34 @@ console.log("3. işlem devam ediyor");
 
 //STRING OPERATIONS
 
-let vocabulary=" Html5 Css3 Js React Angular Vue Html5 ";
+// let vocabulary=" Html5 Css3 Js React Angular Vue Html5 ";
 //vocabulary=vocabulary.trim();
 
-vocabulary=String(vocabulary);
+// vocabulary=String(vocabulary);
 
 //vocabulary=vocabulary.toString();
 
-console.log(vocabulary);
-console.log(vocabulary.length);
-console.log(vocabulary.trim().length);
+// console.log(vocabulary);
+// console.log(vocabulary.length);
+// console.log(vocabulary.trim().length);
 
-console.log(vocabulary.toLocaleUpperCase());
-console.log(vocabulary.toLocaleLowerCase());
+// console.log(vocabulary.toLocaleUpperCase());
+// console.log(vocabulary.toLocaleLowerCase());
 
-console.log(vocabulary.startsWith("H"));
-console.log(vocabulary.endsWith("e"));
+// console.log(vocabulary.startsWith("H"));
+// console.log(vocabulary.endsWith("e"));
 
-console.log(vocabulary.concat("-INC"));
+// console.log(vocabulary.concat("-INC"));
 
-console.log(vocabulary.replace("Vue","Python"));
+// console.log(vocabulary.replace("Vue","Python"));
 
-console.log(vocabulary.substring(4));
-console.log(vocabulary.substring(1,3)); //1<=x<3-1
+// console.log(vocabulary.substring(4));
+// console.log(vocabulary.substring(1,3)); //1<=x<3-1
 
-console.log(vocabulary.indexOf("Html5"));
-console.log(vocabulary.lastIndexOf("Html5"));
+// console.log(vocabulary.indexOf("Html5"));
+// console.log(vocabulary.lastIndexOf("Html5"));
 
-console.log(vocabulary.charAt(3));
-
-
-
-
-
+// console.log(vocabulary.charAt(3));
 
 
 // TYPE OF
