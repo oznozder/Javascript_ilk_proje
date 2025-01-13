@@ -85,14 +85,39 @@ console.log("3. işlem devam ediyor");
 
 //STRING OPERATIONS
 
-let vocabulary=" Html Css Js React Angular Vue ";
-vocabulary=vocabulary.trim();
+let vocabulary=" Html5 Css3 Js React Angular Vue Html5 ";
+//vocabulary=vocabulary.trim();
+
+vocabulary=String(vocabulary);
+
+//vocabulary=vocabulary.toString();
+
 console.log(vocabulary);
 console.log(vocabulary.length);
 console.log(vocabulary.trim().length);
 
 console.log(vocabulary.toLocaleUpperCase());
 console.log(vocabulary.toLocaleLowerCase());
+
+console.log(vocabulary.startsWith("H"));
+console.log(vocabulary.endsWith("e"));
+
+console.log(vocabulary.concat("-INC"));
+
+console.log(vocabulary.replace("Vue","Python"));
+
+console.log(vocabulary.substring(4));
+console.log(vocabulary.substring(1,3)); //1<=x<3-1
+
+console.log(vocabulary.indexOf("Html5"));
+console.log(vocabulary.lastIndexOf("Html5"));
+
+console.log(vocabulary.charAt(3));
+
+
+
+
+
 
 
 // TYPE OF
