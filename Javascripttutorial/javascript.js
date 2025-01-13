@@ -176,7 +176,6 @@ console.log("3. işlem devam ediyor");
 
 // console.log(vocabulary.charAt(3));
 
-
 // TYPE OF
 
 // let varible1=44;
@@ -241,8 +240,6 @@ console.log("3. işlem devam ediyor");
 // let escape2=null;
 // console.log(escape2);
 
-
-
 //OPERATORS
 
  //MATH
@@ -272,11 +269,6 @@ console.log("3. işlem devam ediyor");
 
 // Trigonometric functions
 // console.log("Sin: " + Math.sin(user3 * Math.PI / 180)); // Dereceyi radyana çevirip sinüsünü alır
-
-
-
-
-
 
 // let number1=11;
 // let number2=2;
