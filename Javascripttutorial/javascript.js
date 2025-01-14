@@ -26,6 +26,126 @@ console.log("3. işlem devam ediyor");
 
 // Start Code
 
+// CONDITONAL
+
+// let conditional1=()=>{
+//     const number1=10;
+//     if(number1>5){
+//         console.log(number1+" sayisi 5'ten büyüktür");
+//     }else{
+//         console.log(number1+" sayisi 5'ten küçüktür");
+//     }
+// }
+// conditional1(); 
+
+// let conditional2=()=>{
+//     const number1=10;
+
+//     let result= (number1>5) ? number1+" sayisi 5'ten büyüktür" : number1+" sayisi 5'ten küçüktür";
+//     console.log(result);
+    
+// }
+// conditional2(); 
+
+let conditional3=()=>{
+    const number1=5;
+    if(number1==1){
+        console.log(" sayi 1'e Eşittir");
+    } if(number1==2){
+        console.log(" sayi 2'e Eşittir");
+    }
+    if(number1==3){
+        console.log(" sayi 3'e Eşittir");
+    }
+    if(number1==4){
+        console.log(" sayi 4'e Eşittir");
+    }
+    if(number1=="5"){
+        console.log(" sayi 5'e Eşittir");
+    } else {
+        console.log(" sayi 5'ten farklidir.");
+    }
+}
+conditional3();
+
+let conditional4=()=>{
+    const number1=6;
+    // if(number1===1){
+    //     console.log(" sayi 1'e Eşittir");
+    // } if(number1===2){
+    //     console.log(" sayi 2'e Eşittir");
+    // }
+    // if(number1===3){
+    //     console.log(" sayi 3'e Eşittir");
+    // }
+    // if(number1===4){
+    //     console.log(" sayi 4'e Eşittir");
+    // }
+    // if(number1==="5"){
+    //     console.log(" sayi 5'e Eşittir");
+    // } else {
+    //     console.log(" sayi 5'ten farklidir.");
+    // }
+
+    switch(number1){
+        case 1:
+            console.log(" sayi 1'e Eşittir");
+            break;
+        case 2:
+            console.log(" sayi 2'e Eşittir");
+            break;
+        case 3:
+            console.log(" sayi 3'e Eşittir");
+            break;
+        case 4:
+            console.log(" sayi 4'e Eşittir");
+            break;
+        case 5:
+            console.log(" sayi 5'e Eşittir");
+            break;
+        default:
+            console.log(" sayi 1-5'ten farklidir.");
+            break;
+    }
+
+}
+conditional4();
+
+// FOR LOOP
+let loop1=()=>{
+    for(let i=0;i<10;i++){
+        console.log(i);
+    }
+    //For (;;){}==> Sonsuz döngü
+};
+loop1();
+   
+// While LOOP
+let loop2=()=>{
+    let i=0;
+    while(i<10){
+        console.log(i);
+        i++;
+        //i=i+1;
+        //i+=1; Aynısıdır
+    }
+    //While (true){}==> Sonsuz döngü
+};
+loop2();
+
+// Do While LOOP
+let loop3=()=>{
+    let i=0;
+    do{
+        console.log(i);
+        i++;
+    }while(i<10);
+}
+loop3();
+
+
+// ÇAĞIRACAKSIN Kİ GELSİN A..Q = Acımasız Qerçekler
+
 // FUNCTIONS
 //  function type 1 : parametresiz returnsuz
 // function parametresizreturnsuz(){
@@ -80,13 +200,13 @@ console.log("3. işlem devam ediyor");
 // arrowfunction();
 
 // Immedia Function
-(function(){
-    console.log("Immedia Anonymous Fonksiyon");
-})();
+//(function(){
+//    console.log("Immedia Anonymous Fonksiyon");
+//})();
 
-(()=>{
-    console.log("Immedia Anonymous Fonksiyon");
-})();
+//(()=>{
+//    console.log("Immedia Anonymous Fonksiyon");
+//})();
 
 
 // NUMERIC OPERATIONS
