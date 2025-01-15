@@ -26,24 +26,64 @@ console.log("3. işlem devam ediyor");
 
 // Start Code
 
+// Asekron Yapı
+
+// 1- Callback Functions
+
+// 1.Alan
+
+// const callBackFunction=()=>{
+//     let hesapla=(x,y,callbackkk) => {
+//         let result=x+y;
+//         callbackkk(result);
+//     };
+
+// 2.Alan
+//  let goster=(data) => {
+//     console.log("Sonuç: "+data);
+// };
+//     hesapla(5,7,goster);
+// };
+//  callBackFunction();
+
+ // Asekron Yapı
+
+// 2- Promise Functions
+
+const promiseFunction = () => {
+    const myPromise = new Promise((resolve, reject) => {
+        let number = Math.floor(Math.random() * 10 + 1);
+        if (number % 2 == 0) {
+            resolve("Çift sayi geldi: " + number);
+        } else {
+            reject("Tek sayi geldi: " + number);
+        }
+    });
+
+    myPromise
+        .then(message => console.log(message))
+        .catch(error => console.error(error));
+};
+
+promiseFunction();
 
 // Timer Functions
 
 // SET TIME OUT
-let setTimeoutFunction=()=>{
-    setTimeout(()=> {
-        console.log("Çalişicak Set time out");
-    }, 2000); // 2 saniye sonra çalışır
-}
-setTimeoutFunction();
+// let setTimeoutFunction=()=>{
+//     setTimeout(()=> {
+//         console.log("Çalişicak Set time out");
+//     }, 2000); // 2 saniye sonra çalışır
+// }
+// setTimeoutFunction();
 
 // SET INTERVAL
-let setIntervalFunction=()=>{
-    setInterval(()=> {
-        console.log("Sürekli Çalişicak Set Interval");
-    }, 3000); // 3 saniyede bir çalışır
-}
-setIntervalFunction();
+// let setIntervalFunction=()=>{
+//     setInterval(()=> {
+//         console.log("Sürekli Çalişicak Set Interval");
+//     }, 3000); // 3 saniyede bir çalışır
+// }
+// setIntervalFunction();
 
 // CONDITONAL
 
