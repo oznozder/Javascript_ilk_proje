@@ -26,6 +26,25 @@ console.log("3. işlem devam ediyor");
 
 // Start Code
 
+
+// Timer Functions
+
+// SET TIME OUT
+let setTimeoutFunction=()=>{
+    setTimeout(()=> {
+        console.log("Çalişicak Set time out");
+    }, 2000); // 2 saniye sonra çalışır
+}
+setTimeoutFunction();
+
+// SET INTERVAL
+let setIntervalFunction=()=>{
+    setInterval(()=> {
+        console.log("Sürekli Çalişicak Set Interval");
+    }, 3000); // 3 saniyede bir çalışır
+}
+setIntervalFunction();
+
 // CONDITONAL
 
 // let conditional1=()=>{
@@ -70,22 +89,22 @@ console.log("3. işlem devam ediyor");
 
 // let conditional4=()=>{
 //     const number1=6;
-//     // if(number1===1){
-//     //     console.log(" sayi 1'e Eşittir");
-//     // } if(number1===2){
-//     //     console.log(" sayi 2'e Eşittir");
-//     // }
-//     // if(number1===3){
-//     //     console.log(" sayi 3'e Eşittir");
-//     // }
-//     // if(number1===4){
-//     //     console.log(" sayi 4'e Eşittir");
-//     // }
-//     // if(number1==="5"){
-//     //     console.log(" sayi 5'e Eşittir");
-//     // } else {
-//     //     console.log(" sayi 5'ten farklidir.");
-//     // }
+  // if(number1===1){
+  //     console.log(" sayi 1'e Eşittir");
+ // } if(number1===2){
+ //     console.log(" sayi 2'e Eşittir");
+ // }
+ // if(number1===3){
+    //     console.log(" sayi 3'e Eşittir");
+    // }
+  // if(number1===4){
+ //     console.log(" sayi 4'e Eşittir");
+ // }
+ //if(number1==="5"){
+//     console.log(" sayi 5'e Eşittir");
+// } else {
+//     console.log(" sayi 5'ten farklidir.");
+ // }
 
 //     switch(number1){
 //         case 1:
@@ -111,29 +130,29 @@ console.log("3. işlem devam ediyor");
 // }
 // conditional4();
 
-// // FOR LOOP
+ // FOR LOOP
 // let loop1=()=>{
 //     for(let i=0;i<10;i++){
 //         console.log(i);
 //     }
-//     //For (;;){}==> Sonsuz döngü
+     //For (;;){}==> Sonsuz döngü
 // };
 // loop1();
    
-// // While LOOP
+ // While LOOP
 // let loop2=()=>{
 //     let i=0;
 //     while(i<10){
 //         console.log(i);
 //         i++;
-//         //i=i+1;
-//         //i+=1; Aynısıdır
+         //i=i+1;
+         //i+=1; Aynısıdır
 //     }
-//     //While (true){}==> Sonsuz döngü
+     //While (true){}==> Sonsuz döngü
 // };
 // loop2();
 
-// // Do While LOOP
+ // Do While LOOP
 // let loop3=()=>{
 //     let i=0;
 //     do{
@@ -144,21 +163,21 @@ console.log("3. işlem devam ediyor");
 // loop3();
 
 // Excepiton Handling
-let excepitonHandling=()=>{
-    try {
-        alerx("Pop-up")
+// let excepitonHandling=()=>{
+//     try {
+//         alerx("Pop-up")
         
-    } catch (err) {
-        console.log(err);
-        console.error(err.message);
-    }
-    finally{ 
-        console.log("port.close");
-    }
-    console.log("Son satir mutlaka görünsün.");
-   // throw new Error("Hata44");
-};
-excepitonHandling();
+//     } catch (err) {
+//         console.log(err);
+//         console.error(err.message);
+//     }
+//     finally{ 
+//         console.log("port.close");
+//     }
+//     console.log("Son satir mutlaka görünsün.");
+    // throw new Error("Hata44");
+// };
+// excepitonHandling();
 
 
 // ÇAĞIRACAKSIN Kİ GELSİN A..Q = Acımasız Qerçekler
