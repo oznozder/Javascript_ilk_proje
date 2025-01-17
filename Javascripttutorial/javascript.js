@@ -67,6 +67,20 @@ const promiseFunction = () => {
 
 promiseFunction();
 
+// 3- Async Await Functions
+
+const asyncFunction = () => {
+    async function myAsyncFunction() {
+        try {
+            let response = await fetch ('');
+            let result = response.json();
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
+};
+
+
 // Timer Functions
 
 // SET TIME OUT
