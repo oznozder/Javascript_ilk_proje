@@ -26,6 +26,26 @@ console.log("3. işlem devam ediyor");
 
 // Start Code
 
+// Array Operations
+
+let diziFunction=()=>{
+
+    let dizi=[1,4,3,5,6,2];
+
+    console.log(dizi);
+    console.log(dizi.length);
+    console.log(dizi[0]);
+    console.log(dizi[5]);
+    console.log(dizi[dizi.length-1]);
+
+    let sum=0;
+    for (let i = 0; i < dizi.length; i++) {
+    sum+=dizi[i];
+    }
+    console.log(sum);
+};
+diziFunction();
+
 // Asekron Yapı
 
 // 1- Callback Functions
@@ -50,35 +70,35 @@ console.log("3. işlem devam ediyor");
 
 // 2- Promise Functions
 
-const promiseFunction = () => {
-    const myPromise = new Promise((resolve, reject) => {
-        let number = Math.floor(Math.random() * 10 + 1);
-        if (number % 2 == 0) {
-            resolve("Çift sayi geldi: " + number);
-        } else {
-            reject("Tek sayi geldi: " + number);
-        }
-    });
+// const promiseFunction = () => {
+//     const myPromise = new Promise((resolve, reject) => {
+//         let number = Math.floor(Math.random() * 10 + 1);
+//         if (number % 2 == 0) {
+//             resolve("Çift sayi geldi: " + number);
+//         } else {
+//             reject("Tek sayi geldi: " + number);
+//         }
+//     });
 
-    myPromise
-        .then(message => console.log(message))
-        .catch(error => console.error(error));
-};
+//     myPromise
+//         .then(message => console.log(message))
+//         .catch(error => console.error(error));
+// };
 
-promiseFunction();
+// promiseFunction();
 
 // 3- Async Await Functions
 
-const asyncFunction = () => {
-    async function myAsyncFunction() {
-        try {
-            let response = await fetch ('');
-            let result = response.json();
-        } catch (error) {
-            console.log(error.message);
-        }
-    }
-};
+// const asyncFunction = () => {
+//     async function myAsyncFunction() {
+//         try {
+//             let response = await fetch ('');
+//             let result = response.json();
+//         } catch (error) {
+//             console.log(error.message);
+//         }
+//     }
+// };
 
 
 // Timer Functions
