@@ -26,70 +26,90 @@ console.log("3. işlem devam ediyor");
 
 // Start Code
 
+// Class, Constructor, This
+
+const classExample = () => {
+
+    class Person {
+        constructor(name,age) {
+            this.name = name;
+            this.age = age;
+            
+        }
+        // Function
+        greeting() {
+            console.log(`Merhaba ismim ${this.name}, ${this.age} yaşindayim.`);
+        }
+    }//end of class
+ let persondata1 = new Person("Cansu", 27);
+ persondata1.greeting();
+}
+classExample();
+
 // Array Operations
 
-let diziFunction=()=>{
+// let diziFunction=()=>{
 
-    let dizi=[1,4,3,5,6,2];
+//     let dizi=[1,4,3,5,6,2];
     
-    dizi.sort();
-   // dizi.sort().reverse();
-    console.log(dizi);
-    console.log(typeof dizi);
-    console.log(dizi.length);
-    console.log(dizi[0]);
-    console.log(dizi[5]);
-    console.log(dizi[dizi.length-1])
-    console.log(dizi.toString().concat(" Selamlar"));
-    console.log(dizi.join(" * "));
-    console.log(dizi.fill("İstanbul",1,3));
+//     dizi.sort();
+    // dizi.sort().reverse();
+//     console.log(dizi);
+//     console.log(typeof dizi);
+//     console.log(dizi.length);
+//     console.log(dizi[0]);
+//     console.log(dizi[5]);
+//     console.log(dizi[dizi.length-1])
+//     console.log(dizi.toString().concat(" Selamlar"));
+//     console.log(dizi.join(" * "));
+//     console.log(dizi.fill("İstanbul",1,3));
 
-    let sum=0;
-    for (let i = 0; i < dizi.length; i++) {
-    sum+=dizi[i];
-    }
-    console.log(sum);
+//     let sum=0;
+//     for (let i = 0; i < dizi.length; i++) {
+//     sum+=dizi[i];
+//     }
+//     console.log(sum);
 
-//FOR-IN
-    for (const temp in dizi) {
-console.log(`${temp} => ${dizi[temp]}`);
+         //FOR-IN
+//     for (const temp in dizi) {
+// console.log(`${temp} => ${dizi[temp]}`);
 
-    }
-    console.log("##");
+//     }
+//     console.log("##");
 
-        //FORIN-OF
-        for (const temp of dizi) {
-            console.log(`${temp}`);
+         //FORIN-OF
+//         for (const temp of dizi) {
+//             console.log(`${temp}`);
             
-                }
+//                 }
 
-    dizi.push(7); //son elemanı ekler
-    dizi.unshift(0); //ilk elemanı ekler
-    dizi.pop();  //son elemanı siler
-    dizi.shift(); //ilk elemanı siler
-    let newArray = dizi.map((value) => {
-        return value * 2;
-    }).filter((value) => {
-        return value >= 3;
-    });
-    console.log(newArray);
+//     dizi.push(7); //son elemanı ekler
+//     dizi.unshift(0); //ilk elemanı ekler
+//     dizi.pop();  //son elemanı siler
+//     dizi.shift(); //ilk elemanı siler
+//     let newArray = dizi.map((value) => {
+//         return value * 2;
+//     }).filter((value) => {
+//         return value >= 3;
+//     });
+//     console.log(newArray);
 
-    dizi.forEach((value,index,array) => {
-        console.log(`${value}`);
-    });
+//     dizi.forEach((value,index,array) => {
+//         console.log(`${value}`);
+//     });
 
-    let dummy1=['a','b','c'];
-    console.log(dummy1);
+//     let dummy1=['a','b','c'];
+//     console.log(dummy1);
 
-    let dizi2=[1,2,3,4,5,6,7];
-    dizi2.splice(0,2);
+//     let dizi2=[1,2,3,4,5,6,7];
+//     dizi2.splice(0,2);
 
-    dizi2.forEach((value,index,array) => {
-        console.log(`${value}`);
-    });
+//     dizi2.forEach((value,index,array) => {
+//         console.log(`${value}`);
+//     });
     
-};
-diziFunction();
+// };
+// diziFunction();
 
 // Asekron Yapı
 
