@@ -26,7 +26,50 @@ console.log("3. işlem devam ediyor");
 
 // Start Code
 
+//LOCAL STORAGE
+
+const localStorageFunction = () => {
+
+localStorage.setItem("unique_name", "Cansu");
+const username=localStorage.getItem("unique_name");
+console.log(username);
+//localStorage.removeItem("unique_name");
+//localStorage.clear();
+
+
+
+};
+localStorageFunction();
+
+const greetings=() => {
+    alert("Hello World");
+};
+// EVENT HANDLER
+const parag_change=() => {  
+    alert("Hello World");
+    let parag=document.getElementById("parag_id");
+    parag.innerHTML="<b><mark>Inner HTML Değiştirdi.</mark></b>"
+    parag.innerText="<b><mark>Inner HTML Değiştirdi.</mark></b>"
+    parag.style.color="red";
+    parag.style.backgroundColor="yellow";
+    parag.style.fontSize="20px";
+    parag.style.fontFamily="Arial";
+    parag.style.textAlign="center";
+    parag.style.border="1px solid black";
+    parag.style.padding="10px";
+    parag.style.margin="10px";
+    parag.style.borderRadius="10px";
+    parag.style.boxShadow="5px 5px 5px 5px gray";
+};
+// ADD-EVENTLISTENER
+parag_id.addEventListener("click",()=>{
+    alert ("Paragraf Tıklandı");
+}
+
+);
+
 //OBJECT
+/*
 const objectExample = () => {
     let student = {
         name: "Cansu",
@@ -82,6 +125,7 @@ const instanceOfFunction = () => {
     console.log(karabas instanceof Function);
 }
 instanceOfFunction();
+*/
 
 
 // Class, Constructor, This
