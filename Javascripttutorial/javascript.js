@@ -26,6 +26,405 @@ console.log("3. işlem devam ediyor");
 
 // Start Code
 
+//LOCAL STORAGE
+
+const localStorageFunction = () => {
+
+localStorage.setItem("unique_name", "Cansu");
+const username=localStorage.getItem("unique_name");
+console.log(username);
+//localStorage.removeItem("unique_name");
+//localStorage.clear();
+
+
+
+};
+localStorageFunction();
+
+const greetings=() => {
+    alert("Hello World");
+};
+// EVENT HANDLER
+const parag_change=() => {  
+    alert("Hello World");
+    let parag=document.getElementById("parag_id");
+    parag.innerHTML="<b><mark>Inner HTML Değiştirdi.</mark></b>"
+    parag.innerText="<b><mark>Inner HTML Değiştirdi.</mark></b>"
+    parag.style.color="red";
+    parag.style.backgroundColor="yellow";
+    parag.style.fontSize="20px";
+    parag.style.fontFamily="Arial";
+    parag.style.textAlign="center";
+    parag.style.border="1px solid black";
+    parag.style.padding="10px";
+    parag.style.margin="10px";
+    parag.style.borderRadius="10px";
+    parag.style.boxShadow="5px 5px 5px 5px gray";
+};
+// ADD-EVENTLISTENER
+parag_id.addEventListener("click",()=>{
+    alert ("Paragraf Tıklandı");
+}
+
+);
+
+//OBJECT
+/*
+const objectExample = () => {
+    let student = {
+        name: "Cansu",
+        age: 27,
+        department: "Computer Engineering",
+        grades: [90, 80, 70],
+        pass: true,
+        address: {
+            city: "Istanbul",
+            district: "Kadikoy"
+        },
+        getInfo: function () {
+            return `${this.name} ${this.age}`;
+        }
+
+    }
+    console.log(student);
+    console.log(student.name);
+    console.log(student.age);
+    console.log(typeof student.age);
+    console.log(student.department);
+    console.log(student.grades);
+    console.log(student.grades[0]);
+    console.log(student.grades[1]);
+    console.log(student.address);
+    console.log(student.address.city);
+    console.log(student.address.district);
+   
+    const data = student.getInfo();
+    console.log(data);
+};
+objectExample();
+
+
+const instanceOfFunction = () => {
+
+    function Hayvan(tur, yas) {
+        this.tur = tur;
+        this.yas = yas;
+    }
+    function Kopek(cins) {
+        this.cins = cins;
+    }
+    Kopek.prototype = new Hayvan("Köpek", 2);
+    let karabas = new Kopek("Karabaş");
+    console.log(karabas instanceof Kopek);
+    console.log(karabas instanceof Hayvan);
+    console.log(karabas instanceof Object);
+    console.log(karabas instanceof Array);
+    console.log(karabas instanceof String);
+    console.log(karabas instanceof Number);
+    console.log(karabas instanceof Boolean);
+    console.log(karabas instanceof Function);
+}
+instanceOfFunction();
+*/
+
+
+// Class, Constructor, This
+
+/*
+const classExample = () => {
+
+    class Person {
+        constructor(name,age) {
+            this.name = name;
+            this.age = age;
+            
+        }
+         Function
+        greeting() {
+            console.log(`Merhaba ismim ${this.name}, ${this.age} yaşindayim.`);
+        }
+    }//end of class
+ let persondata1 = new Person("Cansu", 27);
+ persondata1.greeting();
+}
+classExample();
+*/
+
+// Array Operations
+
+// let diziFunction=()=>{
+
+//     let dizi=[1,4,3,5,6,2];
+    
+//     dizi.sort();
+    // dizi.sort().reverse();
+//     console.log(dizi);
+//     console.log(typeof dizi);
+//     console.log(dizi.length);
+//     console.log(dizi[0]);
+//     console.log(dizi[5]);
+//     console.log(dizi[dizi.length-1])
+//     console.log(dizi.toString().concat(" Selamlar"));
+//     console.log(dizi.join(" * "));
+//     console.log(dizi.fill("İstanbul",1,3));
+
+//     let sum=0;
+//     for (let i = 0; i < dizi.length; i++) {
+//     sum+=dizi[i];
+//     }
+//     console.log(sum);
+
+         //FOR-IN
+//     for (const temp in dizi) {
+// console.log(`${temp} => ${dizi[temp]}`);
+
+//     }
+//     console.log("##");
+
+         //FORIN-OF
+//         for (const temp of dizi) {
+//             console.log(`${temp}`);
+            
+//                 }
+
+//     dizi.push(7); //son elemanı ekler
+//     dizi.unshift(0); //ilk elemanı ekler
+//     dizi.pop();  //son elemanı siler
+//     dizi.shift(); //ilk elemanı siler
+//     let newArray = dizi.map((value) => {
+//         return value * 2;
+//     }).filter((value) => {
+//         return value >= 3;
+//     });
+//     console.log(newArray);
+
+//     dizi.forEach((value,index,array) => {
+//         console.log(`${value}`);
+//     });
+
+//     let dummy1=['a','b','c'];
+//     console.log(dummy1);
+
+//     let dizi2=[1,2,3,4,5,6,7];
+//     dizi2.splice(0,2);
+
+//     dizi2.forEach((value,index,array) => {
+//         console.log(`${value}`);
+//     });
+    
+// };
+// diziFunction();
+
+// Asekron Yapı
+
+// 1- Callback Functions
+
+// 1.Alan
+
+// const callBackFunction=()=>{
+//     let hesapla=(x,y,callbackkk) => {
+//         let result=x+y;
+//         callbackkk(result);
+//     };
+
+// 2.Alan
+//  let goster=(data) => {
+//     console.log("Sonuç: "+data);
+// };
+//     hesapla(5,7,goster);
+// };
+//  callBackFunction();
+
+ // Asekron Yapı
+
+// 2- Promise Functions
+
+// const promiseFunction = () => {
+//     const myPromise = new Promise((resolve, reject) => {
+//         let number = Math.floor(Math.random() * 10 + 1);
+//         if (number % 2 == 0) {
+//             resolve("Çift sayi geldi: " + number);
+//         } else {
+//             reject("Tek sayi geldi: " + number);
+//         }
+//     });
+
+//     myPromise
+//         .then(message => console.log(message))
+//         .catch(error => console.error(error));
+// };
+
+// promiseFunction();
+
+// 3- Async Await Functions
+
+// const asyncFunction = () => {
+//     async function myAsyncFunction() {
+//         try {
+//             let response = await fetch ('');
+//             let result = response.json();
+//         } catch (error) {
+//             console.log(error.message);
+//         }
+//     }
+// };
+
+
+// Timer Functions
+
+// SET TIME OUT
+// let setTimeoutFunction=()=>{
+//     setTimeout(()=> {
+//         console.log("Çalişicak Set time out");
+//     }, 2000); // 2 saniye sonra çalışır
+// }
+// setTimeoutFunction();
+
+// SET INTERVAL
+// let setIntervalFunction=()=>{
+//     setInterval(()=> {
+//         console.log("Sürekli Çalişicak Set Interval");
+//     }, 3000); // 3 saniyede bir çalışır
+// }
+// setIntervalFunction();
+
+// CONDITONAL
+
+// let conditional1=()=>{
+//     const number1=10;
+//     if(number1>5){
+//         console.log(number1+" sayisi 5'ten büyüktür");
+//     }else{
+//         console.log(number1+" sayisi 5'ten küçüktür");
+//     }
+// }
+// conditional1(); 
+
+// let conditional2=()=>{
+//     const number1=10;
+
+//     let result= (number1>5) ? number1+" sayisi 5'ten büyüktür" : number1+" sayisi 5'ten küçüktür";
+//     console.log(result);
+    
+// }
+// conditional2(); 
+
+// let conditional3=()=>{
+//     const number1=5;
+//     if(number1==1){
+//         console.log(" sayi 1'e Eşittir");
+//     } if(number1==2){
+//         console.log(" sayi 2'e Eşittir");
+//     }
+//     if(number1==3){
+//         console.log(" sayi 3'e Eşittir");
+//     }
+//     if(number1==4){
+//         console.log(" sayi 4'e Eşittir");
+//     }
+//     if(number1=="5"){
+//         console.log(" sayi 5'e Eşittir");
+//     } else {
+//         console.log(" sayi 5'ten farklidir.");
+//     }
+// }
+// conditional3();
+
+// let conditional4=()=>{
+//     const number1=6;
+  // if(number1===1){
+  //     console.log(" sayi 1'e Eşittir");
+ // } if(number1===2){
+ //     console.log(" sayi 2'e Eşittir");
+ // }
+ // if(number1===3){
+    //     console.log(" sayi 3'e Eşittir");
+    // }
+  // if(number1===4){
+ //     console.log(" sayi 4'e Eşittir");
+ // }
+ //if(number1==="5"){
+//     console.log(" sayi 5'e Eşittir");
+// } else {
+//     console.log(" sayi 5'ten farklidir.");
+ // }
+
+//     switch(number1){
+//         case 1:
+//             console.log(" sayi 1'e Eşittir");
+//             break;
+//         case 2:
+//             console.log(" sayi 2'e Eşittir");
+//             break;
+//         case 3:
+//             console.log(" sayi 3'e Eşittir");
+//             break;
+//         case 4:
+//             console.log(" sayi 4'e Eşittir");
+//             break;
+//         case 5:
+//             console.log(" sayi 5'e Eşittir");
+//             break;
+//         default:
+//             console.log(" sayi 1-5'ten farklidir.");
+//             break;
+//     }
+
+// }
+// conditional4();
+
+ // FOR LOOP
+// let loop1=()=>{
+//     for(let i=0;i<10;i++){
+//         console.log(i);
+//     }
+     //For (;;){}==> Sonsuz döngü
+// };
+// loop1();
+   
+ // While LOOP
+// let loop2=()=>{
+//     let i=0;
+//     while(i<10){
+//         console.log(i);
+//         i++;
+         //i=i+1;
+         //i+=1; Aynısıdır
+//     }
+     //While (true){}==> Sonsuz döngü
+// };
+// loop2();
+
+ // Do While LOOP
+// let loop3=()=>{
+//     let i=0;
+//     do{
+//         console.log(i);
+//         i++;
+//     }while(i<10);
+// }
+// loop3();
+
+// Excepiton Handling
+// let excepitonHandling=()=>{
+//     try {
+//         alerx("Pop-up")
+        
+//     } catch (err) {
+//         console.log(err);
+//         console.error(err.message);
+//     }
+//     finally{ 
+//         console.log("port.close");
+//     }
+//     console.log("Son satir mutlaka görünsün.");
+    // throw new Error("Hata44");
+// };
+// excepitonHandling();
+
+
+// ÇAĞIRACAKSIN Kİ GELSİN A..Q = Acımasız Qerçekler
+
 // FUNCTIONS
 //  function type 1 : parametresiz returnsuz
 // function parametresizreturnsuz(){
@@ -80,13 +479,13 @@ console.log("3. işlem devam ediyor");
 // arrowfunction();
 
 // Immedia Function
-(function(){
-    console.log("Immedia Anonymous Fonksiyon");
-})();
+//(function(){
+//    console.log("Immedia Anonymous Fonksiyon");
+//})();
 
-(()=>{
-    console.log("Immedia Anonymous Fonksiyon");
-})();
+//(()=>{
+//    console.log("Immedia Anonymous Fonksiyon");
+//})();
 
 
 // NUMERIC OPERATIONS
