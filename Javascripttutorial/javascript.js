@@ -26,8 +26,67 @@ console.log("3. işlem devam ediyor");
 
 // Start Code
 
+//OBJECT
+const objectExample = () => {
+    let student = {
+        name: "Cansu",
+        age: 27,
+        department: "Computer Engineering",
+        grades: [90, 80, 70],
+        pass: true,
+        address: {
+            city: "Istanbul",
+            district: "Kadikoy"
+        },
+        getInfo: function () {
+            return `${this.name} ${this.age}`;
+        }
+
+    }
+    console.log(student);
+    console.log(student.name);
+    console.log(student.age);
+    console.log(typeof student.age);
+    console.log(student.department);
+    console.log(student.grades);
+    console.log(student.grades[0]);
+    console.log(student.grades[1]);
+    console.log(student.address);
+    console.log(student.address.city);
+    console.log(student.address.district);
+   
+    const data = student.getInfo();
+    console.log(data);
+};
+objectExample();
+
+
+const instanceOfFunction = () => {
+
+    function Hayvan(tur, yas) {
+        this.tur = tur;
+        this.yas = yas;
+    }
+    function Kopek(cins) {
+        this.cins = cins;
+    }
+    Kopek.prototype = new Hayvan("Köpek", 2);
+    let karabas = new Kopek("Karabaş");
+    console.log(karabas instanceof Kopek);
+    console.log(karabas instanceof Hayvan);
+    console.log(karabas instanceof Object);
+    console.log(karabas instanceof Array);
+    console.log(karabas instanceof String);
+    console.log(karabas instanceof Number);
+    console.log(karabas instanceof Boolean);
+    console.log(karabas instanceof Function);
+}
+instanceOfFunction();
+
+
 // Class, Constructor, This
 
+/*
 const classExample = () => {
 
     class Person {
@@ -36,7 +95,7 @@ const classExample = () => {
             this.age = age;
             
         }
-        // Function
+         Function
         greeting() {
             console.log(`Merhaba ismim ${this.name}, ${this.age} yaşindayim.`);
         }
@@ -45,6 +104,7 @@ const classExample = () => {
  persondata1.greeting();
 }
 classExample();
+*/
 
 // Array Operations
 
