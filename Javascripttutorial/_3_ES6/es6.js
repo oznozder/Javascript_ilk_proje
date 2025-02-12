@@ -183,9 +183,22 @@
 
 // ======================================
 
-for (var i = 1; i < 10; i += 2) {
+// for (var i = 1; i < 10; i += 2) {
+//     console.log("Tek sayilar: " + i);
+// }
+
+let i = 1;
+const x = 10;
+while (i < x) {
     console.log("Tek sayilar: " + i);
-}
+    i += 2;
+} 
+
+const ogrenci={adi:"Ozan",soyadi:"Özder",yil:"1995"};
+console.log(ogrenci);
+ogrenci.adi="Ozzy";
+console.log(ogrenci.adi);
+ogrenci = { adi: "Audi",soyadi: "oguz",yil: "2022" }; //Hata verir
 
 
 
