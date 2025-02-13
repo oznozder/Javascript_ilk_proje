@@ -187,18 +187,93 @@
 //     console.log("Tek sayilar: " + i);
 // }
 
-let i = 1;
-const x = 10;
-while (i < x) {
-    console.log("Tek sayilar: " + i);
-    i += 2;
-} 
+// let i = 1;
+// const x = 10;
+// while (i < x) {
+//     console.log("Tek sayilar: " + i);
+//     i += 2;
+// } 
 
-const ogrenci={adi:"Ozan",soyadi:"Özder",yil:"1995"};
-console.log(ogrenci);
-ogrenci.adi="Ozzy";
-console.log(ogrenci.adi);
-ogrenci = { adi: "Audi",soyadi: "oguz",yil: "2022" }; //Hata verir
+// const ogrenci={adi:"Ozan",soyadi:"Özder",yil:"1995"};
+// console.log(ogrenci);
+// ogrenci.adi="Ozzy";
+// console.log(ogrenci.adi);
+// ogrenci = { adi: "Audi",soyadi: "oguz",yil: "2022" }; //Hata verir
+
+// ======================================
+
+// const newPost = {
+//     title: 'Yeni Başlık',
+//     body: 'Yeni bir post içeriği',
+//     userId: 1
+//   };
+  
+//   fetch('https://jsonplaceholder.typicode.com/posts', {
+//     method: 'POST',  // Veriyi göndereceğimiz method
+//     headers: {
+//       'Content-Type': 'application/json'  // Gönderdiğimiz verinin JSON formatında olduğunu belirtir
+//     },
+//     body: JSON.stringify(newPost)  // JavaScript objesini JSON formatına çeviriyoruz
+//   })
+//     .then(response => response.json())  // Sunucudan dönen yanıtı JSON olarak alıyoruz
+//     .then(data => {
+//       console.log('Yeni post verisi:', data);  // Sunucudan gelen yanıtı konsola yazdırıyoruz
+//     })
+//     .catch(error => {
+//       console.error('Hata:', error);  // Hata durumunda hata mesajı
+//     });
+    
+//     fetch('https://jsonplaceholder.typicode.com/posts/1')
+//   .then(response => {
+//     if (!response.ok) {
+//       throw new Error('Post verisi alınamadı!');
+//     }
+//     return response.json();
+//   })
+//   .then(postData => {
+//     console.log('GET ile alınan post verisi:', postData);  // Yeni post verisini konsola yazdırıyoruz
+//   })
+//   .catch(error => {
+//     console.error('Hata:', error);  // Hata durumunda hata mesajı
+//   });
+
+//   async function asyncFonksiyon() {
+//     return "Merhaba!";
+//   }
+  
+//   console.log(asyncFonksiyon()); 
+
+// ======================================
+
+class MotorluArac {
+  constructor(marka, model, yil, yakitTuru) {
+    this.marka = marka;
+    this.model = model;
+    this.yil = yil;
+    this.yakitTuru = yakitTuru;
+  }
+
+  bilgileriGoster() {
+    console.log(`${this.yil} model ${this.marka} ${this.model} - Yakıt: ${this.yakitTuru}`);
+  }
+} 
+class HibritArac extends MotorluArac {
+  constructor(marka, model, yil, yakitTuru, bataryaKapasitesi) {
+    super(marka, model, yil, yakitTuru);
+    this.bataryaKapasitesi = bataryaKapasitesi;
+  }
+
+  hibritBilgisi(){
+    console.log(`${this.marka} ${this.model} batarya kapasitesi: ${this.bataryaKapasitesi} kWh`);
+
+  }
+}
+
+let toyotaPrius = new HibritArac("Toyota", "Prius", 2022, "Hibrit", 45);
+toyotaPrius.bilgileriGoster();
+toyotaPrius.hibritBilgisi(); 
+
+
 
 
 
