@@ -40,7 +40,7 @@ Package Json:
 1. **Depoyu Klonla**
 
    ```bash
-   git clone https://github.com/kullaniciadi/Javascript_ilk_proje.git
+   git clone https://github.com/oznozder/Javascript_ilk_proje.git
 
 ### Gereksinimler
 
